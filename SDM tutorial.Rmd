@@ -1,0 +1,28 @@
+---
+title: "Practice SDM for Clubes de Ciencias!"
+output: html_notebook
+---
+
+Here we go! Making our first SDM of clubes de ciencias, and doing it with computer programming in the R language!
+
+```{r}
+install.packages(c('raster', 'rgdal', 'dismo'))
+```
+
+### Trouble w/ getting `rJava`?
+I was having some trouble getting `rJava` to load, so then I ran the following code:
+source of this tip [here](https://zhiyzuo.github.io/installation-rJava/)
+```{r}
+dyn.load('/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/server/libjvm.dylib')
+install.packages("rJava")
+library(rJava)
+```
+
+
+Now, import the set of occurrence data that we'll be using for our first SDM
+```{r}
+library(dismo)
+file <- paste(system.file(package="dismo"), "/ex/bradypus.csv", sep="")
+bradypus <- read.table(file,  header=TRUE,  sep=",")
+# this is the file we will use:
+```

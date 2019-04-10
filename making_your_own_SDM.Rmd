@@ -1,0 +1,9 @@
+---
+title: "Making an SDM for a new species!"
+output: html_notebook
+---
+
+One of the coolest part about SDMs is making them for your own species of interest.  Are you curious about the distribution of an endangered species or an invasive species?  You can search for occurrence data on websites like [GBIF](https://www.gbif.org)
+```{r}
+acaule <- gbif("solanum", "acaule*", geo=FALSE)
+```
