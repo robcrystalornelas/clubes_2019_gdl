@@ -1,4 +1,4 @@
 # clubes_2019_gdl
-teaching SDMs using R Notebooks.  Designed for Clubes de Ciencias 2019
+Teaching SDMs using R Notebooks.  Designed for Clubes de Ciencias 2019
 
-We are compiling a series of lesson plans for an intro to R workshop with Clubes de Ciencias in Mexico.
+For this course, we are developing a series of R scripts that both provide an introduction to R programming and an introduction to Species Distribution Modeling.
