@@ -1,18 +1,19 @@
 ---
-title: "Making an SDM for a new species!"
+title: "Making your own SDM Part 2!"
 output: html_notebook
 ---
 
-One of the coolest part about SDMs is making them for your own species of interest.  Are you curious about the distribution of an endangered species or an invasive species?  You can search for occurrence data on websites like [GBIF](https://www.gbif.org)
+One of the coolest part about SDMs is making them for your own species of interest.  Are you curious about the distribution of an endangered species or an invasive species?  Where do we think the species might move based on climate data? You can search for occurrence data on websites like [GBIF](https://www.gbif.org)
 
 ```{r}
 library(dismo)
 library(rgbif)
+library(maptools)
 ```
 
 
 ```{r}
-monk_points <- occ_search(scientificName = "Myiopsitta monachus", 
+scotch_broom_points <- occ_search(scientificName = "Cytisus scoparius", 
                           country = 'MX', fields=c('name','country','countryCode','stateProvince','year','decimalLatitude','decimalLongitude'), limit = 500, return = 'data')
 ```
 
